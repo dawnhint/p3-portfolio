@@ -17,6 +17,7 @@ section {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     background-color: rgb(255,255,255);
     margin-bottom: 2rem;
     border-radius: 1rem;
@@ -29,7 +30,6 @@ section:hover {
     transition: all 0.2s ease-in;
 }
 
-
 .first-section {
     border-top: 3px dotted rgb(140, 191, 227,0.5);
     margin-left: 10rem;
@@ -40,6 +40,15 @@ section:hover {
     margin-left: 3rem;
     width: 30%;
     transform: rotate(30deg);
+}
+
+@media only screen and (max-width:600px) {
+    section {
+        width: 60%;
+    }
+    .first-section {
+        margin-left: 5rem;
+    }
 }
 
 ol,li {

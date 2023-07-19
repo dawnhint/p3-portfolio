@@ -16,8 +16,10 @@ h1 {
     padding-right: 1rem;
 }
 
-p, a {
+p {
     margin-top: 4rem;
+}
+p, a {
     text-align: center;
     font-size: 1rem;
     letter-spacing: 0.1rem;
@@ -31,4 +33,75 @@ a:hover {
     transition: all 0s;
 }
 
+.intro {
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 2rem;
+}
 
+.intro span {
+    border-bottom: 2px solid rgba(7, 86, 90, 0.8);
+}
+
+.intro span {
+    color:#f2b36a;
+}
+
+
+/* sections */
+section {
+    margin: 2rem;
+    border: 3px dotted rgb(140, 191, 227);
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: rgb(255,255,255);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease-out;
+}
+
+.cyberland {
+    display: flex;
+}
+
+video {
+    width: 60%;
+    border-radius: 0.25rem;
+}
+
+.cyberland .description {
+    width: 40%;
+    padding-left: 1.5rem;
+    padding-left: 5%;
+}
+
+.paragraph {
+    color: rgb(49, 110, 176);
+    text-align: left;
+    margin-top: 0;
+    line-height: 1.5rem;
+}
+.cyberland a {
+    display: inline-block;
+    color: rgb(49, 110, 176);
+}
+
+@media only screen and (max-width:600px) {
+    section {
+        padding: 1rem;
+    }
+    video {
+        width: 100%;
+    }
+    .cyberland {
+        flex-direction: column;
+    }
+    .cyberland .description  {
+         width: 100%; 
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-top: 1rem;
+    }
+}
