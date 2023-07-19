@@ -28,7 +28,7 @@ p, a {
     letter-spacing: 0.1rem;
     text-decoration: none;
     transition: all 1s;
-    line-height: 2rem;
+    line-height: 1.5rem;
 } 
 
 a:hover {
