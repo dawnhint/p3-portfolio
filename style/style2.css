@@ -18,6 +18,8 @@ body {
     background-size: 100% 3rem;
     background-repeat: repeat-y;
     background-position-y: 1rem;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -219,6 +221,7 @@ h2 {
 .paragraph {
     line-height: 3rem;
     width: 20rem;
+    max-width: 70vw;
     padding-left: 1rem;
     color: #3A4E80;
 }
@@ -286,10 +289,17 @@ h2 {
     transition: all 0.3s ease-out;
 }
 
+@media only screen and (max-width:800px) {
+    .note-contact {
+        z-index: -2;
+        transition: all 1s ease-out;
+    }
+}
 
 @media only screen and (max-width:700px) {
     .note-contact {
-        z-index: -2;
+        transform: scale(0) rotate(-18deg);
+        transition: all 1s ease-out;
     }
 }
 
