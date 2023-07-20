@@ -4,101 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linn's portfolio</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/index.css">
+
+    <link rel="stylesheet" href="./style/style2.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Pangolin&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@350&family=Pangolin&family=Special+Elite&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" href="./asset/images/balloon.png" type="image/png" />
 </head>
 <body>
+    <!-- left side - header/nav -->
     <header>
-        <div class="main-logo">
-            Linn
-        </div>
-        <div class="nav">
-            <a href="">
-                Works
+        <div class="decoration-dot dot-1"></div>
+        <nav>
+            <a href="" class="link-nav current-nav">
+                LINN
             </a>
-            <a href="">
-                Practises
+            <a href="" class="link-nav">
+                WORK
             </a>
-            <a href="">
-                AboutMe
+            <a href="" class="link-nav">
+                PRACTICE
             </a>
-        </div>      
+            <a href="" class="link-nav">
+                About
+            </a>
+            
+        </nav>
+        <div class="decoration-dot dot-2"></div>
     </header>
-    <h1>
-        &#127769;
-        Hi, this is Linn.
-    </h1>
-    <p>
-       From Shanghai, China, <br>currently in Vancouver, Canada.
-    </p>
-    <div class="intro">
-        <h3>
-            Blending <span>design</span> and <span>code</span>, 
-        </h3>
-        <h3>
-            I create captivating digital experiences.
-
-        </h3>
-    </div>
-    <section>
-        <h2>Cyberland</h2>
-        <div  class="cyberland">
-            <video autoplay loop  muted>
-                <source src="./asset/videos/cyberland_caption.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="description">
+    <main>
+        <div class="title">
+            <h1>
+                Hi, this is Linn.
+            </h1>
+            <span class="title-line">
+                <svg width="467" height="9" viewBox="0 0 467 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.7207 7L174.191 2H318.015H464.78" stroke="#484848" stroke-width="3.52941" stroke-linecap="round"/>
+                </svg>                        
+            </span>                
+        </div>
+        <div class="note location">
+            <p>
+                I’m from Shanghai, China,<br>
+                currently in Vancouver, Canada.
+            </p>
+        </div>
+        <div class="intro">
+            <span class="arrow">
+                >
+            </span>
+            <p class="intro-text">
+                Blending <span>design</span> and <span>code</span>,<br>
+                I create captivating digital experiences.
+            </p>
+        </div>
+        <div class="project">
+            <div class="project-text">
+                <div class="project-title">
+                    <span class="project-tag">GAME
+                        <div class="tag-line"></div>
+                    </span>
+                    <h2>Cyberland</h2>
+                    <div class="project-title-highlight"></div>
+                </div>
                 <p class="paragraph">
-                    This game is made by processing.<br>
-                    This game is made by processing. This game is made by processing. This game is made by processing. This game is made by processing.
-                    <br>
-                    All designed by me.
+                    I made this game with processing, which is a language like java. I made this game with processing. 
                 </p>
-                <a href="">
-                    -> see more
-                </a>
+            </div>
+            <div class="project-photo">
+                <div class="tape"></div>
+                <div class="image-wrapper">
+                    <img src="./asset/images/project1_cover.png" alt="The capture Cyberland game">
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        <h2>Cyberland</h2>
-        <div  class="cyberland">
-            <video autoplay loop  muted>
-                <source src="./asset/videos/cyberland_caption.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <div class="description">
-                <p class="paragraph">
-                    This game is made by processing.<br>
-                    This game is made by processing. This game is made by processing. This game is made by processing. This game is made by processing.
-                    <br>
-                    All designed by me.
-                </p>
-                <a href="">
-                    -> see more
-                </a>
-            </div>
+        <div class="note-contact">
+            <p class="contact-note-text">
+                Feel free to <br> 
+                contact me!
+            </p>
+            <p class="contact-note-sign">
+                :)
+            </p>
         </div>
-    </section>
-    <footer>
-        <p>
-            <a href="">
-                To be continued :)
-            </a>
-            <br>
-            <a href="./style_guide.html">
-                -> style guide
-            </a>
-            <br>
-            <br>
-            <br>
-        </p>        
-    </footer>
+    </main>
+   
 </body>
 </html>
