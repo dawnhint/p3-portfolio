@@ -1,156 +1,69 @@
-* {
-    margin: 0;
-    padding: 0
-}
-
-body{
-    background-color: #3F76AF;
-    font-family: 'Pangolin', cursive;
-    /* font-family: 'Special Elite', cursive; */
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 1rem 0.5rem 1rem;
-    margin: 0 3rem;
-    letter-spacing: 0.4rem;
-    /* background-color: rgb(140, 191, 227,0.2); */
-    border-bottom: 2px dotted rgb(140, 191, 227);
-}
-
-header .nav a {
-    color: #def3f7;
-    display: inline-block;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 30vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-p {
-    margin-top: 4rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-h3 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-p, a {
-    text-align: center;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
-    color: rgb(140, 191, 227);
-    text-decoration: none;
-    transition: all 1s;
-} 
-
-a:hover {
-    color:rgb(245, 213, 171);
-    transition: all 0s;
-}
-
+/* intro part */
 .intro {
-    text-align: center;
-    margin-top: 3rem;
-    padding-top: 1rem;
-    letter-spacing: 0.1em;
-    line-height: 2rem;
-}
-
-.intro span {
-    border-bottom: 2px solid rgba(7, 86, 90, 0.8);
-}
-
-.intro span {
-    color:#f2b36a;
-}
-
-
-/* sections */
-section {
-    margin: 2rem;
-    border: 3px dotted rgb(140, 191, 227);
-    padding: 2rem;
-    padding-top: 1rem;
-    background-color: rgb(255,255,255,0.95);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    transition: all 0.5s ease-out;
-}
-
-@media only screen and (min-width:1200px) {
-    section {
-        margin: 2rem auto;
-        max-width: 1100px;
-        padding-top: 1.5rem;
-    }
-}
-
-
-.cyberland {
+    margin-left: 3rem;
+    margin-top: 5.8rem;
     display: flex;
 }
 
-video {
-    width: 60%;
-    border-radius: 0.25rem;
-}
-
-.cyberland .description {
-    width: 40%;
-    padding-left: 1.5rem;
-    padding-left: 5%;
-}
-
-.paragraph {
-    color: rgb(24, 80, 140);
-    text-align: left;
-    margin-top: 0;
-}
-.cyberland a {
-    display: inline-block;
-    color: rgb(49, 110, 176);
-}
-.cyberland a:hover {
-    color: #d89b7b;
+/* location note */
+.location {
+    transform: rotate(9deg);
+    scale: 0.9;
+    position: absolute;
+    right: 20%;
+    top: 7.2rem;
+    z-index: -5;
 }
 
 @media only screen and (max-width:600px) {
-    section {
-        padding: 1rem;
+    .location {
+        top: 0;
+        right: 3rem;
+        width: 20rem;
+        transition: all 0.5s ease-in;
     }
-    video {
-        width: 100%;
+    .location p {
+        padding: 1rem 2rem 2rem 4rem;
     }
-    .cyberland {
-        flex-direction: column;
-    }
-    .cyberland .description  {
-         width: 100%; 
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        margin-top: 1rem;
-    }
+}
 
-    header {
-        flex-direction: column;
+/* contact note */
+.note-contact {
+    position: absolute;
+    padding-left: 3rem;
+    padding-top: 5rem;
+    top: 10rem;
+    right: -11rem;
+    transform: rotate(-18deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.note-contact:hover, .note-contact:active {
+    right: -5rem;
+    transform: rotate(-20deg);
+    transition: all 0.3s ease-out;
+}
+
+@media only screen and (max-width:800px) {
+    .note-contact {
+        z-index: -2;
+        transition: all 1s ease-out;
     }
-    header .nav {
-        display: flex;
-        justify-content: space-between;
+}
+
+@media only screen and (max-width:700px) {
+    .note-contact {
+        transform: scale(0) rotate(-18deg);
+        transition: all 1s ease-out;
     }
-    header .nav a {
-        padding-left: 0.25rem;
-        padding-right: 0.25rem;
-    }
-    
+}
+
+.contact-note-sign {
+    font-family: 'Pangolin', cursive;
+    line-height: 2rem;
+    color: #C65050;
+    letter-spacing: 0.1rem;
+    position:absolute;
+    right: 8rem;
+    bottom: 8rem;
 }

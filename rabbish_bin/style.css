@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body{
+    font-family: 'Pangolin', cursive;
+    color: white;
+}
+
+h1 {
+    color: #efce62;
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    word-wrap: break-word;
+}
+
+h2 {
+    color: #d8a457;
+    color: rgb(49, 110, 176);
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.5rem;
+}
+
+p, a {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    transition: all 1s;
+    line-height: 1.5rem;
+} 
+
+a:hover {
+    color:rgb(245, 213, 171);
+    transition: all 0s;
+}
+
+.paragraph {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+}
+
+ul, li {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
+    line-height: 2em;
+    color:antiquewhite;
+}
+
+li {
+    margin-left: 3rem;
+}

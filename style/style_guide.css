@@ -1,60 +1,44 @@
-
-body {
-    padding: 2rem;
-    background-color: rgb(49, 110, 176);
-    /* text-align: center; */
+.title svg {
+    transform-origin: 0 50%;
+    transform: scale(0.8);
 }
-
-h1 {
-    margin-bottom: 1rem;
-    padding-left: 2rem;
-    text-align: center;
+.title-line {
+    padding-left: 0;
 }
 
 section {
-    width: 50%;
-    border: 3px dotted rgb(140, 191, 227);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: rgb(255,255,255);
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    /* box-shadow: -0.4rem 0.4rem #f0c272; */
-    transition: all 0.5s ease-out;
-}
-
-section:hover {
-    background-color: rgb(255, 232, 148);
-    transition: all 0.2s ease-in;
-}
-
-.first-section {
-    border-top: 3px dotted rgb(140, 191, 227,0.5);
-    margin-left: 10rem;
-    width: 40%;
-}
-
-.emoji-section {
+    margin-top: 3rem;
     margin-left: 3rem;
-    width: 30%;
-    transform: rotate(30deg);
 }
 
-@media only screen and (max-width:600px) {
-    section {
-        width: 60%;
-    }
-    .first-section {
-        margin-left: 8rem;
-    }
+.text-elements {
+    margin-top: 2.7rem;
 }
 
-ol,li {
-   color: rgb(49, 110, 176);
+.style-element{
+    margin-top: 3rem;
+    padding-left: 2rem;
 }
 
-p {
-    color: rgb(49, 110, 176);
+.h3-title:first-child {
+    transform: translateX(-2rem);
+}
+
+.style-element .link-nav {
+    padding-right: 2rem;
+}
+
+.style-element h1 {
+    line-height: 6rem;
+}
+
+.notes {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    height: 21rem;
+}
+
+.notes .note-small{
+   flex-shrink: 0;
 }
