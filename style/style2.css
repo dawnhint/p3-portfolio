@@ -229,7 +229,23 @@ h2 {
 /* project - right side of photo */
 .project-photo {
     position: relative;
+    transform-origin: top center;
+    animation: photo-wave 1.5s  ease-in-out infinite alternate ;
 }
+.project-photo:hover {
+    animation-play-state:paused;
+}
+
+@keyframes photo-wave {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
+
+
 .image-wrapper {
     padding: 0.4rem 0.3rem;
     background-color: #fff;
@@ -264,7 +280,7 @@ h2 {
     z-index: 5;
     position: absolute;
     top: 0;
-    left: 9rem;
+    left: 8.5rem;
 }
 
 
