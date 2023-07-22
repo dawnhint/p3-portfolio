@@ -12,12 +12,18 @@ section {
 }
 
 .text-elements {
-    margin-top: 2.7rem;
+    margin-top: 0.8rem;
+}
+@media only screen and (max-width:600px) {
+    .text-elements {
+        margin-top: 2.3rem;
+    }
 }
 
 .style-element{
-    margin-top: 3rem;
+    margin-top: 2.9rem;
     padding-left: 2rem;
+    /* border: 1px solid greenyellow; */
 }
 
 .h3-title:first-child {
@@ -36,7 +42,7 @@ section {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    height: 21rem;
+    min-height: 21rem;
 }
 
 .notes .note-small{

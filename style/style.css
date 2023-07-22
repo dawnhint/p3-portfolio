@@ -11,6 +11,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Pangolin', cursive;
+    line-height: 3rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 p {
@@ -31,6 +36,7 @@ a {
     font-size: 1.3rem;
     line-height: 3rem;
     color: #847952;
+    white-space: nowrap;
 }
 
 .link-nav:active, .link-nav:hover {
@@ -48,6 +54,7 @@ h1 {
     font-weight: normal;
     color: #363F48;
     letter-spacing: 0.5rem;
+    line-height: 4.5rem;
 }
 
 h2 {
@@ -96,6 +103,9 @@ h3 {
     color: #E28A24;
 }
 
+
+/* 2 Combined Elements */
+
 /* notes */
 /* a small note */
 .note-small {
@@ -120,7 +130,6 @@ h3 {
 }
 
 /* a medium note */
-/* note contact */
 .note-medium {
     width: 20rem;
     height: 20rem;
@@ -136,20 +145,7 @@ h3 {
     letter-spacing: 0.1rem;
 }
 
-
-@media only screen and (max-width:600px) {
-    .title .title-line{
-        display: block;
-        width: 80vw;
-        left: -4rem;
-        overflow: hidden;
-    }
-    .intro {
-        margin-top: 7.3rem;
-    }
-}
-
-/* project 1 */
+/* project element */
 .project {
     margin-top: 2.7rem;
     margin-left: 2rem;
@@ -167,7 +163,6 @@ h3 {
     color: #413E3B;
     letter-spacing: 0.3rem;
     padding-left: 1rem;
-    padding-right: 1rem;
     position: relative;
 }
 .tag-line {
@@ -182,14 +177,15 @@ h3 {
 
 .project-title h2{
     display: inline-block;
+    padding-left: 1rem;
 }
 
 .project-title-highlight {
     background-color: #FFE7AA;
-    width: 18rem;
+    width: 100%;
     height: 1.5rem;
     position: absolute;
-    top: 1rem;
+    bottom: 0.8rem;
     z-index: -3;
 }
 
@@ -203,6 +199,7 @@ h3 {
     position: relative;
     transform-origin: top center;
     animation: photo-wave 1.5s  ease-in-out infinite alternate ;
+    z-index: 2;
 }
 .project-photo:hover {
     animation-play-state:paused;
@@ -270,8 +267,10 @@ body {
 /* left navigation */
 header {
     width: 20vw;
-    height: 100vh;
+    height: 100%;
     border-right: 2px solid #E19C9C;
+    position: fixed;
+    transition: width 0.6s ease-in-out;
 }
 
 nav {
@@ -291,32 +290,71 @@ nav .link-nav {
     nav {
         padding-left: 0.3rem;
     }
+    nav .link-nav {
+        padding-left: 0;
+    }
+}
+
+/* for js */
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+/* when width<700, header has a special layout */
+/* it covers the whole page?*/
+/* or it's a class, js make the class appears */
+header.mobile-menu {
+    width: 100vw;
+    /* set background */
+    background-color: #F4F1EC;
+    background-image: url("../asset/images/bg_line.png");
+    background-size: 100% 3rem;
+    background-repeat: repeat-y;
+    background-position-y: 1rem;
+    z-index: 999;
+    transition: width 0.8s ease-out;
+}
+header.mobile-menu .link-nav {
+    padding-left: 30%;
 }
 
 /* decoration dot on left side */
 .decoration-dot {
     width: 2rem;
     height: 2rem;
-    background-color: #C3D5DF;
     background-color: #cacbd5;
     border-radius: 50%;
     position: absolute;
+    left: 3rem;
 }
 
 .dot-1 {
-    left: 3rem;
     top: 5rem;
 }
 
 .dot-2 {
-    left: 3rem;
     bottom: 5rem;
 }
 
 /* right side - main content  */
 main {
     width: 80vw;
+    margin-left: 20vw;
 }
+
+@media only screen and (max-width:500px) {
+    header {
+        width: 4.5rem;
+    }
+    .decoration-dot {
+        left: 1rem;
+    }
+    main {
+        margin-left: 3rem;
+    }
+}
+
 
 /* h1 Combined with decoration line */
 .title {
@@ -328,5 +366,14 @@ main {
 .title .title-line {
     display: inline-block;
     position: relative;
-    top: -1rem;
+    top: -2rem;
+}
+
+@media only screen and (max-width:600px) {
+    .title .title-line{
+        display: block;
+        width: 80vw;
+        left: -4rem;
+        overflow: hidden;
+    }
 }

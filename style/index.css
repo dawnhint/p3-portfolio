@@ -1,8 +1,14 @@
 /* intro part */
 .intro {
     margin-left: 3rem;
-    margin-top: 5.8rem;
+    margin-top: 3.8rem;
     display: flex;
+}
+
+@media only screen and (max-width:600px) {
+    .intro {
+        margin-top: 2.3rem;
+    }
 }
 
 /* location note */
