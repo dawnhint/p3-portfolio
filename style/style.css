@@ -54,7 +54,7 @@ h1 {
     font-weight: normal;
     color: #363F48;
     letter-spacing: 0.5rem;
-    line-height: 4.5rem;
+    line-height: 5.9rem;
 }
 
 h2 {
@@ -284,6 +284,11 @@ nav {
 nav .link-nav {
     padding-left: 30%;
 }
+@media only screen and (max-width:800px) {
+    nav .link-nav {
+        padding-left: 0.5rem;
+    }
+}
 
 @media only screen and (max-width:600px) {
     header {
@@ -303,19 +308,27 @@ nav .link-nav {
     display: none;
 }
 
+#nav-toggle {
+    position: relative;
+    z-index: 999;
+}
+
 /* when width<700, header has a special layout */
 /* it covers the whole page?*/
 /* or it's a class, js make the class appears */
 header.mobile-menu {
-    width: 94vw;
+    width: 90vw;
     /* set background */
     background-color: #F4F1EC;
     background-image: url("../asset/images/bg_line.png");
     background-size: 100% 3rem;
     background-repeat: repeat-y;
     background-position-y: 1rem;
-    z-index: 999;
-    transition: width 0.8s ease-out;
+    z-index: 995;
+    transition: width 0.5s ease-out, box-shadow 0.5s ease-out;
+    box-shadow: 0 1rem 1rem 1rem #647296;
+ 
+
 }
 header.mobile-menu .link-nav {
     padding-left: 30%;
@@ -345,15 +358,16 @@ main {
     margin-left: 20vw;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:700px) {
     header {
-        width: 4.5rem;
+        width: 0;
     }
     .decoration-dot {
-        left: 1rem;
+        display: none;
     }
     main {
-        margin-left: 3rem;
+        margin-left: 0;
+        width: 100vw;
     }
 }
 
@@ -363,6 +377,10 @@ main {
     margin-top: 3.3rem;
     margin-left: 3.5rem;
     z-index: 10;
+}
+
+.title h1 {
+    line-height: 4.5rem;
 }
 
 .title .title-line {
