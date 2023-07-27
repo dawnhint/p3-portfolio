@@ -9,3 +9,7 @@
     width: 100%;
     z-index: 1000;
 }
+
+.wrapper-for-bg {
+    overflow-x: hidden;
+}
