@@ -83,8 +83,8 @@
     margin-top: 3rem;
 }
 
-.animation video {
-    height: 9rem;
+.animation video, .animation img {
+    height: 11.9rem;
     width: auto;
     display: inline-block;
     /* border: solid 1px #555555; */
