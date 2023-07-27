@@ -1,17 +1,2 @@
 /* temporary working space */
 
-.menu-toggle {
-    position:fixed;
-    background-color: #F4F1EC;
-    left: 0;
-    top: 1.035rem;
-    width: calc(100% - 24px);
-    margin: 0 12px;
-    line-height: 2.5rem;
-    border-bottom: solid 2px #C3D5DF;
-    z-index: 1000;
-}
-
-.wrapper-for-bg {
-    overflow-x: hidden;
-}

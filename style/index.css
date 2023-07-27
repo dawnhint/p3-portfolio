@@ -92,7 +92,7 @@
 }
 
 .animation video, .animation img {
-    height: 14.9rem;
+    height: 14.99rem;
     width: auto;
     display: inline-block;
     border: dashed 1px #949494;
@@ -107,3 +107,13 @@
     }
 }
 
+
+.animation .row-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact .intro{
+    margin-top: 3rem;
+}

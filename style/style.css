@@ -19,7 +19,6 @@ html {
 }
 
 p {
-    font-family: 'Josefin Sans', sans-serif;
     line-height: 3rem;
 }
 
@@ -46,6 +45,17 @@ a {
 
 .current-nav {
     color: #C24429;
+}
+
+/* inline link */
+.text-link {
+    display: inline;
+    color: #E28A24;
+}
+
+.text-link:focus, .text-link:hover {
+    color: #e23124;
+    text-decoration: underline;
 }
 
 
@@ -87,9 +97,19 @@ h3 {
 /* paragraphs */
 
 .paragraph {
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 3rem;
-    max-width: 70vw;
     color: #3A4E80;
+}
+
+.paragraph-large {
+    line-height: 3rem;
+    color: #272727;
+    letter-spacing: 0.1rem;
+}
+
+.paragraph-large span {
+    color: #1F429B;
 }
 
 .impo-text {
@@ -105,7 +125,7 @@ h3 {
 }
 
 
-/* 2 Combined Elements */
+/* 3 Combined Elements */
 
 /* notes */
 /* a small note */
@@ -251,6 +271,15 @@ h3 {
     left: 8.5rem;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .row-right {
+    margin-left: 2rem;
+}
+
 
 
 /* 4 General Layout Template, left side navigation and main */
@@ -341,11 +370,24 @@ nav .link-nav {
 }
 
 .menu-toggle {
-    position: relative;
     display: block;
     text-align: center;
     margin: 0 auto;
-    z-index: 999;
+
+    position:fixed;
+    left: 0;
+    top: 1.035rem;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    line-height: 2.5rem;
+    
+    background-color: #F4F1EC;
+    border-bottom: solid 2px #C3D5DF;
+    z-index: 1000;
+}
+
+.wrapper-for-bg {
+    overflow-x: hidden;
 }
 
 /* for js */
@@ -452,3 +494,5 @@ main {
         overflow: hidden;
     }
 }
+
+
