@@ -1,6 +1,6 @@
 /* intro part */
 .intro {
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
     margin-top: 3.8rem;
     display: flex;
 }
@@ -76,4 +76,16 @@
     position:absolute;
     right: 8rem;
     bottom: 8rem;
+}
+
+/* animation section */
+.animation .intro {
+    margin-top: 3rem;
+}
+
+.animation video {
+    height: 9rem;
+    width: auto;
+    display: inline-block;
+    /* border: solid 1px #555555; */
 }
