@@ -1,3 +1,4 @@
+/** Toggle section*/
 var navToggle = document.querySelector("#nav-toggle");
 var navItems  = document.querySelector("#nav-items");
 var header = document.querySelector("#header");
@@ -40,3 +41,5 @@ navToggle.addEventListener("click", ()=> {
         header.classList.remove("mobile-menu");
     }
 })
+
+

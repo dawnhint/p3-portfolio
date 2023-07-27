@@ -1,12 +1,14 @@
 /* temporary working space */
 
 .menu-toggle {
-    /* todo: https://blog.csdn.net/youhebuke225/article/details/126937520 */
-    position:sticky;
-    /* background-color: #fff; */
-    margin-top: 0;
-    top: 0;
-    width: 100%;
+    position:fixed;
+    background-color: #F4F1EC;
+    left: 0;
+    top: 1.035rem;
+    width: calc(100% - 24px);
+    margin: 0 12px;
+    line-height: 2.5rem;
+    border-bottom: solid 2px #C3D5DF;
     z-index: 1000;
 }
 
