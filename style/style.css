@@ -24,6 +24,7 @@ p {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
 }
 
@@ -256,11 +257,12 @@ h3 {
 
 html{
     background-color: #EFEFEF;
-    padding: 20px;
+    padding: 20px 30px;
     padding-top: 15px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    z-index: -11;
 }
 
 body {
@@ -271,11 +273,13 @@ body {
     position: relative;
     box-shadow: 8px 8px #D9D9D9;
     overflow: scroll;
+    z-index: -10;
 }
 
 @media only screen and (max-width:700px) {
     html {
-        padding: 20px 10px;
+        padding: 25px 10px;
+        padding-top: 15px;
     }
     body {
         box-shadow: 5px 5px #D9D9D9;
@@ -294,6 +298,8 @@ body {
     height: auto;
     min-height: 100%;
     display: flex;
+
+    z-index: -9;
 }
 
 /* left navigation */
@@ -334,18 +340,18 @@ nav .link-nav {
     }
 }
 
-/* for js */
-.hidden {
-    visibility: hidden;
-    display: none;
-}
-
-#nav-toggle {
+.menu-toggle {
     position: relative;
     display: block;
     text-align: center;
     margin: 0 auto;
     z-index: 999;
+}
+
+/* for js */
+.hidden, #nav-toggle.hidden {
+    visibility: hidden;
+    display: none;
 }
 
 /* when width<700, header has a special layout */
@@ -420,8 +426,11 @@ main {
 
 /* h1 Combined with decoration line */
 .title {
-    margin-top: 3.3rem;
-    margin-left: 3.5rem;
+    padding-top: 3rem;
+    margin-top: 0.3rem;
+    padding-left: 3.5rem;
+    margin-left: 0;
+    background-color: #F4F1EC;
     z-index: 10;
 }
 

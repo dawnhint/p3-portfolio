@@ -40,7 +40,7 @@
 /* contact note */
 .note-contact {
     position: absolute;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-top: 5rem;
     top: 10rem;
     right: -11rem;
@@ -52,6 +52,14 @@
     right: -5rem;
     transform: rotate(-20deg);
     transition: all 0.3s ease-out;
+}
+
+.note-contact .heading {
+    color:#3751a1;
+}
+
+.note-contact p {
+    padding-bottom: 1rem;
 }
 
 @media only screen and (max-width:800px) {
@@ -84,8 +92,18 @@
 }
 
 .animation video, .animation img {
-    height: 11.9rem;
+    height: 14.9rem;
     width: auto;
     display: inline-block;
-    /* border: solid 1px #555555; */
+    border: dashed 1px #949494;
+    border-radius: 0.1rem;
 }
+@media only screen and (max-width:600px) {
+    .animation video, .animation img {
+        height: 9rem;
+    }
+    .animation .intro {
+        margin-top: 3.8rem;
+    }
+}
+
