@@ -89,7 +89,7 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     line-height: 3rem;
     color: #E28A24;
 }
@@ -219,7 +219,6 @@ h3 {
 .project-photo {
     position: relative;
     transform-origin: top center;
-    animation: photo-wave 1.5s  ease-in-out infinite alternate ;
     z-index: 2;
 }
 .project-photo:hover {
@@ -397,8 +396,6 @@ nav .link-nav {
 }
 
 /* when width<700, header has a special layout */
-/* it covers the whole page?*/
-/* or it's a class, js make the class appears */
 header.mobile-menu {
     width: 80%;
     height: 90%;
@@ -443,7 +440,7 @@ main {
     min-height: 100%;
     margin-left: 20vw;
     margin-right: 0;
-    border-left: 2px solid #E19C9C;
+    border-left: 5px double #E19C9C;
     padding-left: 3rem;
     padding-right: 3rem;
     overflow-x: hidden;
@@ -465,6 +462,12 @@ main {
     }
 }
 
+main > h1 {
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    padding-left: 2rem;
+    background-color: #F4F1EC;
+}
 
 /* h1 Combined with decoration line */
 .title {
@@ -474,6 +477,7 @@ main {
     margin-left: 0;
     background-color: #F4F1EC;
     z-index: 10;
+    /* border: solid 4px #731E00; */
 }
 
 .title h1 {
@@ -493,6 +497,10 @@ main {
         left: -4rem;
         overflow: hidden;
     }
+}
+
+.intro {
+    display: flex;
 }
 
 

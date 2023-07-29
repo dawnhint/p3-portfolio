@@ -2,13 +2,17 @@
 .intro {
     /* margin-left: 3rem; */
     margin-top: 3.8rem;
-    display: flex;
 }
 
 @media only screen and (max-width:600px) {
     .intro {
         margin-top: 2.3rem;
     }
+}
+
+/* project */
+.project-photo {
+    animation: photo-wave 1.5s  ease-in-out infinite alternate ;
 }
 
 /* location note */
@@ -88,7 +92,7 @@
 
 /* animation section */
 .animation .intro {
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .animation video, .animation img {
@@ -97,6 +101,7 @@
     display: inline-block;
     border: dashed 1px #949494;
     border-radius: 0.1rem;
+    margin-left: 1rem;
 }
 @media only screen and (max-width:600px) {
     .animation video, .animation img {
@@ -112,6 +117,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.animation .outside-link {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact .intro{
