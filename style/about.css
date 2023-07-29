@@ -1,0 +1,12 @@
+section {
+    margin-top: 6rem;
+}
+
+.orange-text {
+    font-family: inherit;
+    color: #E28A24;
+}
+
+.contact .paragraph-large span {
+    color: #E28A24;
+}

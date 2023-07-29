@@ -50,6 +50,7 @@ a {
 .text-link {
     display: inline;
     color: #E28A24;
+    font-family: inherit;
 }
 
 .text-link:focus, .text-link:hover {
@@ -104,7 +105,7 @@ h3 {
 .paragraph-large {
     line-height: 3rem;
     color: #272727;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
 }
 
 .paragraph-large span {
@@ -136,6 +137,7 @@ h3 {
     position: relative;
 }
 .note-small p {
+    font-family: 'Josefin Sans', sans-serif;
     padding: 1.2rem 4rem;
     line-height: 1.4rem;
 }

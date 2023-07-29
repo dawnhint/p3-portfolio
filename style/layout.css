@@ -25,7 +25,7 @@ body {
 
 @media only screen and (max-width:700px) {
     html {
-        padding: 25px 10px;
+        padding: 3rem 10px;
         padding-top: 15px;
     }
     body {
@@ -245,7 +245,6 @@ main > h1 {
 .intro {
     display: flex;
 }
-
 
 /* bottom height shape*/
 .bottom-empty-area {
