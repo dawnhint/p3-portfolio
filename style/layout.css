@@ -102,6 +102,11 @@ nav .link-nav {
     background-color: #F4F1EC;
     border-bottom: solid 2px #C3D5DF;
     z-index: 1000;
+
+    /* style */
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    color:#b7854c;
 }
 
 .wrapper-for-bg {
@@ -188,6 +193,15 @@ main > h1 {
     background-color: #F4F1EC;
 }
 
+@media only screen and (max-width:700px) {
+    main > h1 {
+        margin-top: 3.8rem;
+        margin-bottom: 1.8rem;
+        padding-left: 2rem;
+        background-color: #F4F1EC;
+    }
+}
+
 /* h1 Combined with decoration line */
 .title {
     padding-top: 3rem;
@@ -198,7 +212,17 @@ main > h1 {
     z-index: 10;
     /* border: solid 4px #731E00; */
 }
-
+@media only screen and (max-width:700px) {
+    .title {
+        padding-top: 4rem;
+        margin-top: 2.3rem;
+        padding-left: 3.5rem;
+        margin-left: 0;
+        background-color: #F4F1EC;
+        z-index: 10;
+        /* border: solid 4px #731E00; */
+    }
+}
 .title h1 {
     line-height: 4.5rem;
 }
