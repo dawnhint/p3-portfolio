@@ -72,13 +72,14 @@ img {
 }
 
 .video-section {
-    margin-top: 2.98rem;
+    margin-top: 2.95rem;
 }
 
 video {
     width: 80%;
-    padding-left: 1rem;
+    margin-left: 1rem;
     max-width: 800px;
+    border: dashed 1px #949494;
 }
 
 /* TODO: combine them to math calculation */
@@ -158,6 +159,12 @@ video {
 @media only screen and (max-width:500px) {
     .code-section {
         margin-top: 9rem;
+    }
+    video {
+        margin-left: 0;
+    }
+    img {
+        padding-left: 0;
     }
 }
 
