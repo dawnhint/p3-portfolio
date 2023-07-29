@@ -27,6 +27,12 @@ img, video {
     transition: scale 0.5s ease-in-out;
 }
 
+@media only screen and (max-width:450px) {
+    .wider-image {
+        height: 9rem;
+    }
+}
+
 a:hover img {
     position: relative;
     transition: scale 0.5s ease-out;

@@ -67,10 +67,15 @@
 }
 @media only screen and (max-width:600px) {
     .animation video, .animation img {
-        height: 9rem;
+        height: 12rem;
     }
     .animation .intro {
         margin-top: 4.1rem;
+    }
+}
+@media only screen and (max-width:450px) {
+    .animation video, .animation img {
+        height: 9rem;
     }
 }
 
