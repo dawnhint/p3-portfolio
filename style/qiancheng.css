@@ -33,7 +33,7 @@ div, section{
 
 /* idea section */
 .idea-section {
-    margin-top: 2.9rem;
+    margin-top: 3rem;
 }
 .idea-section .row{
     gap: 0 1rem;
@@ -77,7 +77,7 @@ div, section{
 
 /* challenge section */
 .challenge-section {
-    margin-top: 2.9rem;
+    margin-top: 2.8rem;
 }
 
 /* outcome section */
@@ -109,4 +109,5 @@ div, section{
 /* credits section */
 .credits-section {
     padding-top: 3rem;
+    margin-top: 3rem;
 }
