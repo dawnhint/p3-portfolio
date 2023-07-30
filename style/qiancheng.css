@@ -1,0 +1,57 @@
+div, section{
+    line-height: normal;
+}
+
+
+/* intro section */
+.intro-section {
+    margin-top: 3rem;
+ }
+ .intro-section .row {
+     justify-content: space-around;
+ }
+
+
+/* idea section */
+.idea-section {
+    margin-top: 2.9rem;
+}
+.idea-section .row{
+    gap: 0 1rem;
+}
+.idea-section .paragraph {
+    width: 50%;
+    min-width: 12rem;
+}
+.idea-section img {
+    border: dashed 1px #949494;
+    height: 9rem;
+}
+@media only screen and (max-width:1400px) {
+    .idea-section img {
+        border: dashed 1px #949494;
+        height: 9rem;
+    }
+}
+
+
+/* challenge section */
+.challenge-section {
+    margin-top: 2.7rem;
+}
+
+/* outcome section */
+.outcome-section {
+    margin-top: 2.9rem;
+}
+
+.outcome-section img {
+    border: dashed 1px #949494;
+    height: 18rem;
+}
+@media only screen and (max-width:800px) {
+    .outcome-section img {
+        border: dashed 1px #949494;
+        height: 12rem;
+    }
+}
