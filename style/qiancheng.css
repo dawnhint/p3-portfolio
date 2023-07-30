@@ -8,7 +8,26 @@ div, section{
     margin-top: 3rem;
  }
  .intro-section .row {
-     justify-content: space-around;
+     justify-content:flex-start;
+ }
+
+ .intro-section .row .paragraph {
+    width: 70%;
+ }
+ @media only screen and (max-width:850px) {
+    .intro-section .row .paragraph {
+        width: 90%;
+     }
+}
+@media only screen and (max-width:700px) {
+    .intro-section .row .paragraph {
+        width: 100%;
+     }
+}
+
+ .intro-section img {
+    height: 6rem;
+    padding-left: 1rem;
  }
 
 
@@ -19,25 +38,46 @@ div, section{
 .idea-section .row{
     gap: 0 1rem;
 }
-.idea-section .paragraph {
-    width: 50%;
-    min-width: 12rem;
-}
+
 .idea-section img {
     border: dashed 1px #949494;
-    height: 9rem;
+    height: 15rem;
 }
-@media only screen and (max-width:1400px) {
+
+@media only screen and (max-width:900px) {
     .idea-section img {
-        border: dashed 1px #949494;
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .idea-section img {
         height: 9rem;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .idea-section img {
+        height: 12rem;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .idea-section img {
+        height: 9rem;
+    }
+}
+
+@media only screen and (max-width:410px) {
+    .idea-section img {
+        height: 6rem;
     }
 }
 
 
 /* challenge section */
 .challenge-section {
-    margin-top: 2.7rem;
+    margin-top: 2.9rem;
 }
 
 /* outcome section */
@@ -49,9 +89,24 @@ div, section{
     border: dashed 1px #949494;
     height: 18rem;
 }
+
 @media only screen and (max-width:800px) {
     .outcome-section img {
-        border: dashed 1px #949494;
         height: 12rem;
     }
+}
+
+@media only screen and (max-width:410px) {
+    .outcome-section img {
+        width: 100%;
+        height: auto;
+    }
+    .image-empty-wrapper {
+        height: 9rem;
+    }
+}
+
+/* credits section */
+.credits-section {
+    padding-top: 3rem;
 }

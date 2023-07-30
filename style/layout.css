@@ -131,17 +131,20 @@ header.mobile-menu {
     height: 90%;
     /* set background */
     background-color: #F4F1EC;
-    background-image: url("../asset/images/bg_line.png");
+    background-image: repeating-linear-gradient(transparent,
+            transparent calc(3rem - 2px),
+            #C3D5DF calc(3rem - 2px),
+            #C3D5DF 3rem);
     background-size: 100% 3rem;
     background-repeat: repeat-y;
-    background-position-y: 1rem;
+    background-position-y: 2.5rem;
     z-index: 995;
     transition: width 0.5s ease-out, box-shadow 0.5s ease-out;
     border-right: solid 2px #939ebe;
     border-bottom: solid 2px #939ebe;
-    box-shadow: 5px 7px 4px 0px rgba(198, 188, 188, 0.5);
-    
+    box-shadow: 5px 7px 4px 0px rgba(198, 188, 188, 0.5);  
 }
+
 header.mobile-menu .link-nav {
     padding-left: 30%;
 }
