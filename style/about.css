@@ -31,7 +31,8 @@ section {
 
 @media only screen and (max-width:600px) {
     .contact .note-medium {
+        padding: 2rem;
         padding-top: 3rem;
-        margin-left: 1rem;
+        margin-left: 0.5rem;
     }
 }
