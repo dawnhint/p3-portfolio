@@ -11,3 +11,27 @@ section {
 .contact .paragraph-large span {
     color: #E28A24;
 }
+
+.contact {
+    padding-top: 3rem;
+}
+
+.contact .note-medium {
+    width: 21rem;
+    height: 21rem;
+    padding: 3rem;
+    margin-left: 2rem;
+    max-width: 100%;
+    rotate: -3deg;
+}
+
+.contact .note-medium h2 {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width:600px) {
+    .contact .note-medium {
+        padding-top: 3rem;
+        margin-left: 1rem;
+    }
+}

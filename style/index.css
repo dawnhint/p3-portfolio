@@ -4,7 +4,7 @@
     margin-top: 3.8rem;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
     .intro {
         margin-top: 2.3rem;
     }

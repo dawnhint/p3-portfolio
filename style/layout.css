@@ -35,10 +35,16 @@ body {
 
 .wrapper-for-bg {
     background-color: #F4F1EC;
-    background-image: url("../asset/images/bg_line.png");
+    /* background-image: url("../asset/images/bg_line.png"); */
+    background-image: repeating-linear-gradient(transparent,
+            transparent calc(3rem - 2px),
+            #C3D5DF calc(3rem - 2px),
+            #C3D5DF 3rem);
     background-size: 100% 3rem;
     background-repeat: repeat-y;
-    background-position-y: 1rem;
+    /* background-position-y: 1rem; */
+    background-position-y: 2.5rem;
+
     
     position: relative;
     width: 100%;
@@ -212,17 +218,7 @@ main > h1 {
     z-index: 10;
     /* border: solid 4px #731E00; */
 }
-@media only screen and (max-width:700px) {
-    .title {
-        padding-top: 4rem;
-        margin-top: 2.3rem;
-        padding-left: 3.5rem;
-        margin-left: 0;
-        background-color: #F4F1EC;
-        z-index: 10;
-        /* border: solid 4px #731E00; */
-    }
-}
+
 .title h1 {
     line-height: 4.5rem;
 }
@@ -231,6 +227,13 @@ main > h1 {
     display: inline-block;
     position: relative;
     top: -2rem;
+}
+
+@media only screen and (max-width:863px) {
+    .title .title-line{
+        width: 80vw;
+        overflow: hidden;
+    }
 }
 
 @media only screen and (max-width:600px) {
