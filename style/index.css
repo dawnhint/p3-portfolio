@@ -15,20 +15,6 @@
     animation: photo-wave 1.5s  ease-in-out infinite alternate ;
 }
 
-/* location note */
-.location {
-    transform: rotate(9deg);
-    scale: 0.9;
-    position: absolute;
-    right: 20%;
-    top: 7.2rem;
-    z-index: -5;
-}
-
-.location .decoration-dot {
-    left: 21rem;
-}
-
 @media only screen and (max-width:600px) {
     .location {
         top: 0;
