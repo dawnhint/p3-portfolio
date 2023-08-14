@@ -236,11 +236,14 @@ h3 {
 }
 
 .image-wrapper {
-    padding: 0.4rem 0.3rem;
+    width: 16.8rem;
+    height: 12rem;
     background-color: #fff;
     border-radius: 0.5rem;
     border: 1px solid black;
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0.3rem 0.2rem rgb(100,100,100,0.3);
     transform: translateY(2rem) rotate(5.3deg);
     transition: all 0.5s ease-in-out;
@@ -249,6 +252,7 @@ h3 {
 }
 .image-wrapper img {
     width: 16rem;
+    height: auto;
     border-radius: 0.35rem;
     border: 1px solid black;
 }
