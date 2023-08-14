@@ -82,6 +82,12 @@ video {
     border: dashed 1px #949494;
 }
 
+/* reflection section */
+.reflection {
+    margin-top: 3rem;
+}
+
+
 /* TODO: combine them to math calculation */
 @media only screen and (min-width:1400px) {
     img{

@@ -25,8 +25,7 @@ body {
 
 @media only screen and (max-width:700px) {
     html {
-        padding: 3rem 10px;
-        padding-top: 15px;
+        padding: 15px 10px;
     }
     body {
         box-shadow: 5px 5px #D9D9D9;
@@ -251,6 +250,20 @@ main > h1 {
 .intro {
     display: flex;
 }
+
+
+/* footer */
+footer {
+    margin-top: 6rem;
+}
+footer h3{
+    color:#1F40B8;
+}
+footer .text-link {
+    color:#1F40B8;
+    padding-right: 1rem;
+}
+
 
 /* bottom height shape*/
 .bottom-empty-area {

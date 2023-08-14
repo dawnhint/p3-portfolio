@@ -1,3 +1,6 @@
+div {
+    line-height: normal;
+}
 
 .title svg {
     transform-origin: 0 50%;
@@ -11,11 +14,46 @@ section {
     margin-top: 3rem;
 }
 
-.text-elements {
+.general-style {
     margin-top: 0.8rem;
 }
+
+.general-style .color {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem ;
+}
+.general-style .color div{
+    width: 10rem;
+    height: 6rem;
+}
+.general-style .color p{
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 1rem;
+    color: white;
+}
+.blue-black {
+    background-color: #3A4E80;
+}
+.blue {
+    background-color: #1F40B8;
+}
+.orange {
+    background-color: #E28A24;
+}
+.yellow {
+    background-color: #FFE7AA;
+}
+.color .yellow p {
+    color: #3A4E80;
+}
+
+.general-style img {
+    height: 21rem;
+}
+
 @media only screen and (max-width:600px) {
-    .text-elements {
+    .general-style {
         margin-top: 2.3rem;
     }
 }
